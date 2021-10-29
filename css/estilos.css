@@ -1,0 +1,152 @@
+/* Comentario en CSS */
+/* 
+Sintaxis
+selector {
+    propiedad1: valor;
+    propiedad2: valor;
+    propiedadN: valor;
+}
+
+Pilares de CSS:
+    Cascada
+    Herencia
+    Especificidad
+
+Tipo de Selectores:
+    Etiqueta
+    Clase (Recomendado)
+    ID (Cuando JavaScript si es importante respetar el ID unico)
+    Universal (Resetear o Limpiar estilos por defecto del navegador)
+
+Tipos de elementos html:
+    inline -> en linea: El tamaño estara determinado por el contenido de la caja, se colocaran uno al lado del otro viualmente
+    block -> en bloque: El tamaño siempre va a ocupar el 100% asi el contenido dentro de la caja no ocupe todo el espacio disponible, se colocaran uno debajo del otro visualmente como si hubiese un salto de linea
+    inline-block -> en linea y bloque a la vez: es un hibrido que nos permite aprovechar las caracteristicas de ambos
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Eje Principal */
+    align-items: center; /* Eje Secundario */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* opacity: 0.3; */
+}
+
+.header__logo {
+    width: 200px;
+    /* height: 15px; */
+}
+
+.navegacion {
+    /* background-color: yellow; */
+}
+
+.navegacion__lista {
+    list-style: none;
+    display: flex; /* Flexbox */
+}
+
+.navegacion__enlace {
+    color:rgb(31, 31, 22);
+    text-decoration: none; /* Quitar Subrayado a los elementos enlace */
+}
+
+.navegacion__item {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.seccion1 {
+    background-color: #3b3b2a;    
+    width: 100%;
+    min-height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1__titulo {
+    font-size: 70px;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    text-decoration: none;
+    margin-bottom 32px;
+}
+
+.seccion1__parrafo {
+    font-size: 20px;
+}
+
+.seccion2 {
+    background-color: #3b3b2a;    
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+}
+
+.seccion2__ladoA {
+    background-color: #3b3b2a;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 32px;
+
+    text-align: center;
+    color: white;
+}
+
+.seccion2__ladoB {
+    background-color: #3b3b2a;
+    width: 50%;
+}
+
+.seccion2__ladoB image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion2__titulo {
+    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+
+
+
