@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Istmo Hueni | Contacto</title>
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istmo Hueni | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <body>
-        <body>
-                <header class="header">
-                <img class="header__logo" src="imagenes/logo_hueni.png" alt="">
-                <nav class="navegacion">                
-                    <ul class="navegacion__lista">
-                        <li class="navegacion__item">
-                            <a class="navegacion__enlace" href="index.html">Home</a></li>
-                        </li>
-                        <li class="navegacion__item">
-                            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a></li>
-                        </li>
-                        <li class="navegacion__item">
-                            <a class="navegacion__enlace" href="novedades.html">Novedades</a></li>
-                        </li>
-                        <li class="navegacion__item">
-                            <a class="navegacion__enlace" href="catálogo.html">Catálogo</a></li>
-                        </li>
-                        <li class="navegacion__item">
-                            <a class="navegacion__enlace" href="contacto.html">Contacto</a></li>
-                        </li>
-                    </ul>
-                </nav>  
-            </header>
+            <header class="header">
+            <img class="header__logo" src="imagenes/logo_hueni.png" alt="">
+            <nav class="navegacion">                
+                <ul class="navegacion__lista">
+                    <li class="navegacion__item">
+                        <a class="navegacion__enlace" href="index.html">Home</a></li>
+                    </li>
+                    <li class="navegacion__item">
+                        <a class="navegacion__enlace" href="novedades.html">Novedades</a></li>
+                    </li>
+                    <li class="navegacion__item">
+                        <a class="navegacion__enlace" href="catálogo.html">Catálogo</a></li>
+                    </li>
+                    <li class="navegacion__item">
+                        <a class="navegacion__enlace" href="contacto.html">Contacto</a></li>
+                    </li>
+                </ul>
+            </nav>  
+        </header>
+
         <main>
-            <section>
-    
-            </section>
+            <section class="seccion-contacto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2>Formulario de Consulta</h2>
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Tipo de Consulta</label>
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Sugerencia</option>
+                                    <option value="2">Reclamo</option>
+                                    <option value="3">Comprar</option>
+                                  </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                                </div>
+                    </div>
+                        <div class="col-12 col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d24175.661111288802!2d-71.67298554077385!3d-40.762956426871725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-40.7436319!2d-71.655469!4m5!1s0x9610bf71fab9696d%3A0x67374f53a7170eb!2sIstmo%20HUENI%20Mermeladas%2C%20Blvd.%20Nahuel%20Huapi%202150%2C%20Q8407%20Villa%20La%20Angostura%2C%20Neuqu%C3%A9n!3m2!1d-40.7821415!2d-71.6578973!5e0!3m2!1sen!2sar!4v1637092220166!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>    
         </main>
-        <footer>
-            <p>infohueni@gmail.com</p>
-            <p>+54 294 453-1336</p>
+
+        <footer class="footer">
+            <div class="estilos-escritorio enlaces-contacto">
+                <a href="mailto:infohueni@gmail.com">infohueni@gmail.com</a>
+                <a href="https://wa.me/+542944531336">+54 294 453-1336</a>
+            </div>
             <ul>
                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D542944531336%26fbclid%3DIwAR1OKHAznXAogF6Ck03psZUSfNDooQtJynXoeufcC4fxQKMRcUCIZrQin5w&h=AT1ImA_oyBc2TqsGbmOUmynt5LnxyYLIN6KRJeDUDtfm_xYMDnmoAuaNjOiDHB8hmlXO5A93EYbiuOk6YkGhg2cT-W2njYZZsvlDFrZHzP2-lwm_gPb5mGgyiSpjN5rgIEk">Whatsapp</a></li>
                 <li><a href="https://www.facebook.com/istmohueni/">Facebook</a></li>
                 <li><a href="https://www.instagram.com/istmo.hueni/">Instagram</a></li>
             </ul>
+            <p>Derechos Reservados Leonardo Kovacs - 2021       
+            </p>
         </footer>
-    </body>
+        <script src="./js/bootstrap.bundle.js"></script>
+</body>
 </html>

@@ -175,6 +175,30 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left
 }
 
+.seccion-contacto {    
+    background-image: url('../imagenes/istmo.jpg');
+    background-color: rgba(34, 54, 90, 0.363);
+    padding-top: 130px;
+}
+.container-fluid {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.mapa {
+    width: 100%;
+}
+.carousel-item {
+    height: 400px;
+ 
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
     .header {
         /* flex-direction: wrap; */ /* El valor es valido?  */
