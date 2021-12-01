@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 32px;
     text-align: center;
     color: white;
@@ -177,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .seccion-contacto {    
     background-image: url('../imagenes/istmo.jpg');
-    background-color: rgba(34, 54, 90, 0.363);
     padding-top: 130px;
 }
 .container-fluid {
@@ -186,11 +185,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 30px;
 }
 
-.mapa {
-    width: 100%;
-}
 .carousel-item {
-    height: 400px;
+    height: 350px;
  
 }
 .seccion-productos {
