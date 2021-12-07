@@ -40,41 +40,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     padding-left: 40px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Eje Principal */
-    align-items: center; /* Eje Secundario */
-
+    justify-content: space-between; 
+    align-items: center; 
+    z-index: 100;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100px;
-    /* opacity: 0.3; */
 }
 
 .header__logo {
-    width: 200px;
-    /* height: 15px; */
+    height: 100%;
+}
+.navegacion {
+    width: 100%;
+    height: 100%;
 }
 
 .navegacion__lista {
+    height: 100%;
     list-style: none;
-    display: flex; /* Flexbox */
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
 }
 
 .navegacion__enlace {
-    color: rgb(44, 44, 35);
-    text-decoration: none; /* Quitar Subrayado a los elementos enlace */
-    
+    color: black;
+    text-decoration: none;
+  
 }
 
-.navegacion__item {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .seccion1 {
     width: 100%;
@@ -135,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .seccion2__ladoB {
-    background-color: #435a43;
+    background-color: #3d4443;
     width: 50%; 
 }
 
@@ -215,6 +217,9 @@ h1, h2, h3, h4, h5, h6 {
 .seccion-productos {
     padding-top: 120px;
 }
+.col-12 {
+    padding-bottom: 20px;
+}
 
 .img-card {
     max-width: 100%;
@@ -226,52 +231,57 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: cover;
 }
+.mapa {
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
     .header {
-        padding-left: 20px;
         width: 100%;
         height: 100px;
     }
     .navegacion__lista {
+        gap: 0;
         font-size: 12px;
         flex-direction: column;
     }
         
     .header__logo {
-        width: 80px;
+        height: 60%;
     }
    
     .seccion1__titulo {
         font-size: 36px;
-            }
+    }
+
     .seccion1__parrafo {
         font-size: 15px;
+    }
+    .seccion2__titulo {
+        font-size: 16px;
     }
 
     .seccion2 {
         flex-direction: column;
-        height: auto;        
         min-height: 100vh;
         font-size: 12px;
     }
     .seccion2__titulo {
         margin-bottom: 10px;
-        border-bottom: 2px solid white;
         padding-bottom: 20px;
-        text-shadow: 2px 2px 2px black;
     }
 
     .seccion2--column-reverse {
         background-color: white;
         flex-direction: column-reverse;
-        font-size: 12px;        
+         
     }
         
     .seccion2__ladoA, .seccion2__ladoB {
         width: 100%;
-        height: 60vh;
     }
+
     .footer {
         align-items: center;
         font-size: 12px;        
